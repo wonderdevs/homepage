@@ -43,15 +43,15 @@
       "sort-imports": ["error", { "ignoreDeclarationSort": true }],
       "space-before-function-paren": "error",
       "valid-typeof": "error",
-      "vue/component-name-in-template-casing": ["error", "PascalCase",
-        {
-          "ignores": [
-            "router-link",
-            "router-view",
-            "transition"
-          ]
-        }
-      ]
+      // "vue/component-name-in-template-casing": ["error", "PascalCase",
+      //   {
+      //     "ignores": [
+      //       "router-link",
+      //       "router-view",
+      //       "transition"
+      //     ]
+      //   }
+      // ]
     },
     "plugins": [
       "vue"
