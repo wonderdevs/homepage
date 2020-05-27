@@ -1,8 +1,7 @@
 <template>
   <div>
-    <img src="../assets/logo.png">
-    <h1>Vue 2 & AT-UI</h1>
-    <at-button @click="handleClick">Thanks for choosing AT-UI</at-button>
+    <h1>Vue 2 & ElementUI</h1>
+    <el-button @click="handleClick" size="small" round>Small</el-button>
   </div>
 </template>
 
@@ -15,7 +14,10 @@ export default {
         handleClick () {
             api.getLaravel(2)
                 .then(() => {
-                    this.$Message('It works! We believe that you can save your time with AT-UI.')
+                    this.$message({
+                        message: 'Congrats, this is a success message.',
+                        type: 'success'
+                    });
                 });
         }
     }
