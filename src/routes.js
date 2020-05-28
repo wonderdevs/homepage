@@ -1,5 +1,5 @@
 import Home from '@/components/Home';
-// const AppMedium = () => import('@/components/AppMedium');
+const Community = () => import('@/components/Community');
 
 const routes = [
     {
@@ -7,11 +7,11 @@ const routes = [
         name: 'Home',
         component: Home
     },
-    // {
-    //     path: '/medium',
-    //     name: 'Medium',
-    //     component: AppMedium
-    // }
+    {
+        path: '/community',
+        name: 'Community',
+        component: Community
+    }
 ];
 
 export default routes;
