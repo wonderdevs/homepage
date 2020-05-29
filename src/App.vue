@@ -8,12 +8,7 @@
             <el-menu-item index="/">
                 Home
             </el-menu-item>
-            <el-menu-item index="/community">
-                Comunidad
-            </el-menu-item>
-            <el-menu-item index="3">
               <img src="./assets/logo.png" height="28" />
-            </el-menu-item>
           </el-menu>
         </div>
 
