@@ -66,10 +66,13 @@ const webpackConfig = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(jpg|JPG|jpeg|png|gif|mp3|svg|ttf|woff2|woff|eot)$/gi,
                 use: [
                     {
-                        loader: 'file-loader'
+                        loader: 'file-loader',
+                        options: {
+                            esModule: false,
+                        },
                     }
                 ]
             },
