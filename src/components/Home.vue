@@ -1,12 +1,8 @@
 <template>
   <div>
     <div>
-      <el-carousel indicator-position="outside" arrow="never" interval={5000}>
-        <el-carousel-item v-for="item in 4" :key="item">
-          <h3>{{ item }}</h3>
-        </el-carousel-item>
-      </el-carousel>
-      <el-button @click="handleClick" size="small" round>Small</el-button>
+      Wondergames
+      <!-- <el-button @click="handleClick" size="small" round>Small</el-button> -->
     </div>
     <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel quasi qui nam labore odio ut. Rerum fuga accusantium et quidem eos inventore, atque natus animi repellendus, iste iure ea.</p>

@@ -2,11 +2,14 @@
   <div>
     <el-container>
       <el-header>
-        <div class="nav-bar">  
-          <div class="nav-bar-title">Wondergames</div>
+        <div class="nav-bar">
+          <router-link class="nav-bar-title" to="/">Wondergames</router-link>
           <el-menu :default-active="activeIndex" class="el-menu-demo" router mode="horizontal" @select="handleSelect">
-            <el-menu-item index="/">
-                Home
+            <el-menu-item index="/tournaments">
+                Torneos
+            </el-menu-item>
+            <el-menu-item index="/community">
+                Community
             </el-menu-item>
               <img src="./assets/logo.png" height="28" />
           </el-menu>
