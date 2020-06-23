@@ -1,8 +1,14 @@
 <template>
   <div>
-    <div>
-      Wondergames
-      <!-- <el-button @click="handleClick" size="small" round>Small</el-button> -->
+    <div class="jumbo">
+      <div class="jumbo-container">
+        <!-- <el-button @click="handleClick" size="small" round>Small</el-button> -->
+        <div class="custom-shape-divider-bottom-1592939975">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+      </div>
     </div>
     <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vel quasi qui nam labore odio ut. Rerum fuga accusantium et quidem eos inventore, atque natus animi repellendus, iste iure ea.</p>
@@ -82,7 +88,30 @@ export default {
         font-weight: normal;
         margin: 16px 0;
     }
-
+    .jumbo {
+      position: relative;
+      height: 450px;
+      background-color: lavender;
+    }
+    .custom-shape-divider-bottom-1592939975 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 289px;
+            transform: rotateY(180deg);
+        }
+        .shape-fill {
+            fill: #FFFFFF;
+        }
+    }
     .triage {
         display: flex;
         justify-content: space-around;

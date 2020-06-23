@@ -47,6 +47,10 @@ export default {
 html {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 .nav-bar {
   display: flex;
   border-bottom: solid 1px #e6e6e6;
