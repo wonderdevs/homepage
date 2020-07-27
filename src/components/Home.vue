@@ -2,6 +2,14 @@
   <div>
     <div class="jumbo">
       <div class="jumbo-container">
+        <div class="header-container">
+          <img src="../assets/header.png" height="400"/>
+          <div>
+            <h1 class="title">Wondergames</h1>
+            <p class="subtitle">Comunidad gaming para todos los públicos</p>
+            <div class="description">👾 amantes de los videojuegos,<br>💻 frikis de la informática<br>🍻 y gulas de alitas y cerveza.</div>
+          </div>
+        </div>
         <!-- <el-button @click="handleClick" size="small" round>Small</el-button> -->
         <div class="custom-shape-divider-bottom-1592939975">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -91,7 +99,27 @@ export default {
     .jumbo {
       position: relative;
       height: 450px;
-      background-color: lavender;
+      background-color: #fde2f6;
+      margin: -20px;
+      .header-container {
+        display: flex;
+        img {
+          margin-right: 12px;
+        }
+        .title {
+          font-family: 'Pacifico', cursive;
+          font-size: 64px;
+          color: purple;
+          margin: 0;
+        }
+        .subtitle {
+          font-size: 28px;
+          margin-top: -19px;
+        }
+        .description {
+          font-size: 18px;
+        }
+      }
     }
     .custom-shape-divider-bottom-1592939975 {
         position: absolute;

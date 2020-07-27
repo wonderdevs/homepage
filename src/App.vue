@@ -3,15 +3,16 @@
     <el-container>
       <el-header>
         <div class="nav-bar">
-          <router-link class="nav-bar-title" to="/">Wondergames</router-link>
           <el-menu :default-active="activeIndex" class="el-menu-demo" router mode="horizontal" @select="handleSelect">
+            <el-menu-item class="nav-bar-title" index="/">
+              Wondergames
+            </el-menu-item>
             <el-menu-item index="/tournaments">
                 Torneos
             </el-menu-item>
             <el-menu-item index="/community">
                 Community
             </el-menu-item>
-              <img src="./assets/logo.png" height="28" />
           </el-menu>
         </div>
 
@@ -44,12 +45,14 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;600;700&display=swap');
 html {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 body {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
+  font-family: 'Overpass Mono', monospace;
 }
 .nav-bar {
   display: flex;
@@ -60,6 +63,8 @@ body {
   .nav-bar-title {
     font-family: 'Pacifico', cursive;
     font-size: 28px;
+    color: purple !important;
+    border-bottom: 0px !important;
   }
   .el-menu {
     border-bottom: none;
